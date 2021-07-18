@@ -1,5 +1,10 @@
-function squareRoot(number) {
+function square(number) {
     return number * number;
 }
 
-export default squareRoot;
+function cube(number) {
+    return number ** 3;
+}
+
+// export default squareRoot;
+export { square, cube };
