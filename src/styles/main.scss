@@ -1,3 +1,5 @@
+@charset 'UTF-8';
+
 /*--------------------------------------------------------------
 # Abstracts
 --------------------------------------------------------------*/
@@ -5,22 +7,30 @@
 @import "abstracts/mixins";
 
 /*--------------------------------------------------------------
-# Layout
+# Base
 --------------------------------------------------------------*/
-@import "layout/normalize";
-@import "layout/grids";
+@import "base/normalize";
+@import "base/general";
 
 /*--------------------------------------------------------------
-# UI Components
+# Layout
 --------------------------------------------------------------*/
-@import "ui-components/buttons";
-@import "ui-components/icons";
+@import "layout/alignment";
+@import "layout/grids";
 
 /*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
+@import "blocks/header";
 @import "blocks/hero";
 @import "blocks/footer";
+
+/*--------------------------------------------------------------
+# UI Components
+--------------------------------------------------------------*/
+@import "ui-components/cards";
+@import "ui-components/buttons";
+@import "ui-components/icons";
 
 /*--------------------------------------------------------------
 # Pages

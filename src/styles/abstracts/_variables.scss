@@ -1,7 +1,30 @@
-// Fonts
-$mainFont: sans-serif;
-$secondFont: serif;
+// CSS Custom Properties
+:root {
+    /*
+     *  Fonts --------------
+     */
+    --font-main: sans-serif;
+    --font-secondary: serif;
 
-// Colors
+    /*
+     *  Dimensions -------------
+     */
 
-// Measurements
+    // Widths
+    --size-full-width: 1100px;
+
+    // Paddings
+    --card-padding: 20px;
+
+    // Others
+    --box-radius: 5px;
+
+    /*
+     *  Colors -------------
+     */
+    --color-main: rgb(57, 190, 124);
+    --color-bg: #FAFAFA;
+    --color-card: #E0E0E0;
+    --color-card-important: #41B3E6;
+    --color-card-bg: #FFFFFF;
+}
