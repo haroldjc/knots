@@ -2,8 +2,8 @@
     border: 1px solid var(--color-card);
     background: var(--color-card-bg);
     border-radius: var(--box-radius);
-    margin: var(--card-padding) 0;
-    padding: var(--card-padding);
+    margin: var(--box-gap) 0;
+    padding: var(--box-gap);
 
     &__heading {
         margin-top: 0;
@@ -14,7 +14,8 @@
     }
 
     &--important {
-        --color-card: var(--color-card-important);
+        --color-card: var(--color-important);
         color: var(--color-card);
+        background-color: rgba(var(--color-important-rgb), 0.05);
     }
 }

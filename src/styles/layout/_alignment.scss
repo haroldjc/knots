@@ -1,4 +1,5 @@
 .l-container {
     margin: auto;
     max-width: var(--size-full-width);
+    padding: 0 calc(var(--box-gap) * 2);
 }

@@ -1,30 +1,46 @@
-// CSS Custom Properties
+// CSS Custom Properties (variables)
 :root {
-    /*
-     *  Fonts --------------
-     */
+    /* ********************
+     *  Fonts
+     * ********************/
+
     --font-main: sans-serif;
     --font-secondary: serif;
 
-    /*
-     *  Dimensions -------------
-     */
+    /* ********************
+     *  Dimensions
+     * ********************/
 
     // Widths
     --size-full-width: 1100px;
 
-    // Paddings
-    --card-padding: 20px;
+    // Box gaps for margin and paddings
+    --box-gap: 20px;
 
     // Others
     --box-radius: 5px;
 
-    /*
-     *  Colors -------------
-     */
-    --color-main: rgb(57, 190, 124);
-    --color-bg: #FAFAFA;
+    /* ********************
+     *  Colors
+     * ********************/
+    --color-main-rgb: 57, 190, 124; // #39BE7C
+    --color-main: rgb(var(--color-main-rgb));
+    
+    --color-bg:#FAFAFA;
     --color-card: #E0E0E0;
-    --color-card-important: #41B3E6;
     --color-card-bg: #FFFFFF;
+
+    --color-important-rgb: 65, 179, 230; //#41B3E6
+    --color-important: rgb(var(--color-important-rgb));
+    --color-text: #000;
+
+    /* ********************
+     *  Dark mode
+     * ********************/
+
+    @media (prefers-color-scheme: dark) {
+        --color-bg: #000;
+        --color-text: #FFF;
+    }
+
 }

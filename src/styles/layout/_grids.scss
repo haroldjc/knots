@@ -1,8 +1,8 @@
 .l-grid {
     display: grid;
-    grid-gap: var(--card-padding);
+    grid-gap: var(--box-gap);
 
-    /* Create modifiers for two to eight columns (ex: .l-grid-3 */
+    // Create modifiers for two to eight columns (ex: .l-grid-3
     @for $i from 2 through 8 {
         &--#{$i} {
             grid-template-columns: repeat($i, 1fr);
