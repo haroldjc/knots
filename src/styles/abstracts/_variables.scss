@@ -1,46 +1,61 @@
-// CSS Custom Properties (variables)
 :root {
-    /* ********************
-     *  Fonts
-     * ********************/
 
-    --font-main: sans-serif;
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+    --font-main: 'Inter', sans-serif;
     --font-secondary: serif;
 
-    /* ********************
-     *  Dimensions
-     * ********************/
+/*--------------------------------------------------------------
+# Dimensions
+--------------------------------------------------------------*/
 
     // Widths
     --size-full-width: 1100px;
 
     // Box gaps for margin and paddings
-    --box-gap: 20px;
+    --box-gap: 25px;
 
     // Others
     --box-radius: 5px;
 
-    /* ********************
-     *  Colors
-     * ********************/
-    --color-main-rgb: 57, 190, 124; // #39BE7C
-    --color-main: rgb(var(--color-main-rgb));
-    
-    --color-bg:#FAFAFA;
-    --color-card: #E0E0E0;
-    --color-card-bg: #FFFFFF;
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
 
-    --color-important-rgb: 65, 179, 230; //#41B3E6
+    // Main color
+    --color-main-hex: #39BE7C;
+    --color-main-rgb: 57, 190, 124;
+    --color-main: rgb(var(--color-main-rgb));
+
+    // Hightlight color
+    --color-important-hex: #41b3e6;
+    --color-important-rgb: 65, 179, 230;
     --color-important: rgb(var(--color-important-rgb));
+
+    // Alert color
+    --color-alert-hex: #f25a5a;
+    --color-alert-rgb: 242, 90, 90;
+    --color-alert: rgb(var(--color-alert-rgb));
+    
+    // Typography
     --color-text: #000;
 
-    /* ********************
-     *  Dark mode
-     * ********************/
+    // Components
+    --color-bg:#FAFAFA;
+    --color-box: #E0E0E0;
+    --color-box-bg: #FFFFFF;
+
+/*--------------------------------------------------------------
+# Dark mode
+--------------------------------------------------------------*/
 
     @media (prefers-color-scheme: dark) {
-        --color-bg: #000;
+        --color-bg: rgb(37, 37, 37);
         --color-text: #FFF;
+        --color-box: #3b3b3b;
+        --color-box-bg: #1d1d1d;
     }
 
 }

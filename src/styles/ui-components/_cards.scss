@@ -1,8 +1,9 @@
 .c-card {
-    border: 1px solid var(--color-card);
-    background: var(--color-card-bg);
+    border: 1px solid var(--color-box);
+    background: var(--color-box-bg);
     border-radius: var(--box-radius);
-    margin: var(--box-gap) 0;
+    line-height: 1.4em;
+    margin-bottom: var(--box-gap);
     padding: var(--box-gap);
 
     &__heading {
@@ -13,9 +14,23 @@
         margin-bottom: 0;
     }
 
+    p {
+        margin: 0;
+    }
+
+    p + p {
+        margin-top: 1em;
+    }
+
     &--important {
-        --color-card: var(--color-important);
-        color: var(--color-card);
-        background-color: rgba(var(--color-important-rgb), 0.05);
+        --color-box: var(--color-important);
+        color: var(--color-box);
+        background-color: rgba(var(--color-important-rgb), 0.1);
+    }
+
+    &--alert {
+        --color-box: var(--color-alert);
+        color: var(--color-box);
+        background-color: rgba(var(--color-alert-rgb), 0.1);
     }
 }
