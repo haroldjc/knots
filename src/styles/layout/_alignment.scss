@@ -3,3 +3,11 @@
     max-width: var(--size-full-width);
     padding: 0 calc(var(--box-gap) * 2);
 }
+
+.l-left {
+    text-align: left;
+}
+
+.l-right {
+    text-align: right;
+}

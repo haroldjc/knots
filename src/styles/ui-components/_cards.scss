@@ -23,14 +23,14 @@
     }
 
     &--important {
-        --color-box: var(--color-important);
+        --color-box: rgba(var(--color-important));
         color: var(--color-box);
-        background-color: rgba(var(--color-important-rgb), 0.1);
+        background-color: rgb(var(--color-important), 0.1);
     }
 
     &--alert {
         --color-box: var(--color-alert);
         color: var(--color-box);
-        background-color: rgba(var(--color-alert-rgb), 0.1);
+        background-color: rgb(var(--color-alert), 0.1);
     }
 }

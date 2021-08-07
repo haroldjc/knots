@@ -26,21 +26,19 @@
 
     // Main color
     --color-main-hex: #39BE7C;
-    --color-main-rgb: 57, 190, 124;
-    --color-main: rgb(var(--color-main-rgb));
+    --color-main: 57, 190, 124;
 
     // Hightlight color
-    --color-important-hex: #41b3e6;
-    --color-important-rgb: 65, 179, 230;
-    --color-important: rgb(var(--color-important-rgb));
+    --color-important-hex: #41B3E6;
+    --color-important: 65, 179, 230;
 
     // Alert color
-    --color-alert-hex: #f25a5a;
-    --color-alert-rgb: 242, 90, 90;
-    --color-alert: rgb(var(--color-alert-rgb));
+    --color-alert-hex: #F25A5A;
+    --color-alert: 242, 90, 90;
     
     // Typography
-    --color-text: #000;
+    --color-text-hex: #000000;
+    --color-text: 0, 0, 0;
 
     // Components
     --color-bg:#FAFAFA;
