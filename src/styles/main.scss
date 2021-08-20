@@ -11,6 +11,7 @@
 --------------------------------------------------------------*/
 @import "base/normalize";
 @import "base/general";
+@import "base/typography";
 
 /*--------------------------------------------------------------
 # Layout
@@ -19,14 +20,15 @@
 @import "layout/grids";
 
 /*--------------------------------------------------------------
-# Blocks
+# Components
 --------------------------------------------------------------*/
 @import "blocks/header";
-@import "blocks/hero";
 @import "blocks/footer";
+@import "blocks/hero";
+@import "blocks/page";
 
 /*--------------------------------------------------------------
-# UI Components
+# UI Elements
 --------------------------------------------------------------*/
 @import "ui-components/links";
 @import "ui-components/cards";

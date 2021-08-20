@@ -1,8 +1,31 @@
-.button {
-    --height: 40px;
+a.button,
+button.button {
+    --height: 44px; // Bases on Target Size (https://www.w3.org/WAI/WCAG21/Understanding/target-size.html)
+    align-items: center;
     background: rgb(var(--color-main));
     border-radius: var(--box-radius);
+    border: none;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
+    display: inline-flex;
     height: var(--height);
+    justify-content: center;
     line-height: var(--height);
+    min-width: 10ch;
+    padding: 0 1.2em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active {
+        filter: saturate(160%);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgb(0, 0, 0, .5);
+        outline-style: solid;
+        outline-color: transparent;
+    }
 }
